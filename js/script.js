@@ -12,10 +12,12 @@ var app = new Vue({
  methods:{
    go: function () {
      console.log(this.submit);
-     let svuota = '';
-     return this.submit.push(this.text);
-     this.text= svuota;
+     this.submit.push(this.text);
+     this.text= '';
    },
+   removeElement: function (index) {
+    this.submit.splice(0, 1);
+  }
  }
 });
 Vue.config.devtools = true

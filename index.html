@@ -8,6 +8,7 @@ cancellare la nota, cliccando sulla X corrispondente -->
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <title>Boo</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
@@ -30,9 +31,15 @@ cancellare la nota, cliccando sulla X corrispondente -->
 
       <div class="row three">
         <div class="todo-list">
+          <!-- <ul id="example-1">
+          <li v-for="(key, item) in items">
+          {{ item.message }}
+          <button v-on:click="removeElement(key)">remove</button>
+        </li>
+      </ul> -->
           <ul>
             <li v-for="text in submit">
-              {{ text }}
+              {{ text }} <i class="fas fa-times" @click="removeElement(submit)"></i>
             </li>
           </ul>
         </div>
