@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.container{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.img img{
+  width: 450px;
+  height: 100px;
+}
+
+.input{
+}

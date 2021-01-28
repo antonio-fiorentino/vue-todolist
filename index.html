@@ -1,0 +1,42 @@
+<!-- scrivere in un input
+premendo invio nell'input oppure cliccando sul submit, salvare nella lista la nuova nota
+visualizzare tutte le note nel box sottostante
+cancellare la nota, cliccando sulla X corrispondente -->
+
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Boo</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+
+    <div id="root" class="container">
+
+      <div class="row one">
+        <div class="img">
+          <img src="img/logo.png" alt="">
+        </div>
+      </div>
+
+      <div class="row two">
+        <div class="input">
+          <input for="submit" v-model="text" placeholder="Nuovo Todo" v-on:keyup.enter="go">
+          <button type="button" name="submit" @click="go">Aggiungi</button>
+        </div>
+      </div>
+
+      <div class="row three">
+        <div class="todo-list">
+
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/script.js" charset="utf-8"></script>
+
+  </body>
+</html>
