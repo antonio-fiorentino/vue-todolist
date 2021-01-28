@@ -31,12 +31,6 @@ cancellare la nota, cliccando sulla X corrispondente -->
 
       <div class="row three">
         <div class="todo-list">
-          <!-- <ul id="example-1">
-          <li v-for="(key, item) in items">
-          {{ item.message }}
-          <button v-on:click="removeElement(key)">remove</button>
-        </li>
-      </ul> -->
           <ul>
             <li v-for="text in submit">
               {{ text }} <i class="fas fa-times" @click="removeElement(submit)"></i>
