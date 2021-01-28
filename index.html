@@ -30,7 +30,11 @@ cancellare la nota, cliccando sulla X corrispondente -->
 
       <div class="row three">
         <div class="todo-list">
-
+          <ul>
+            <li v-for="text in submit">
+              {{ text }}
+            </li>
+          </ul>
         </div>
       </div>
 
