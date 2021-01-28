@@ -12,7 +12,12 @@ var app = new Vue({
  methods:{
    go: function () {
      console.log(this.submit);
-     this.submit.push(this.text);
+     if (this.text === '') {
+       alert('Error 404: Inserire testo')
+     }else {
+       this.submit.push(this.text);
+
+     }
      this.text= '';
    },
    removeElement: function (index) {
