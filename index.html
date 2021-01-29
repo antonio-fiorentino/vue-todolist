@@ -32,10 +32,10 @@ cancellare la nota, cliccando sulla X corrispondente -->
       <div class="row three">
         <div class="todo-list">
           <ul>
-            <li class="list" v-for="text in submit">
-              <span class="text-left">{{ text }}</span><i class="fas fa-times text-right" @click="removeElement(submit)"></i>
-            </li>
-          </ul>
+            <li class="list" v-for="(text, i) in submit">
+                          <span class="text-left">{{ text }}</span><i class="fas fa-times text-right" @click="removeElement(i)"></i>
+                        </li>
+                                </ul>
         </div>
       </div>
 
