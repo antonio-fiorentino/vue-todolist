@@ -21,7 +21,7 @@ var app = new Vue({
      this.text= '';
    },
    removeElement: function (index) {
-    this.submit.splice(0, 1);
+    this.submit.splice(index, 1);
   }
  }
 });
